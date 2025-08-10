@@ -11,6 +11,31 @@ export interface ChangelogEntry {
 
 export const changelog: ChangelogEntry[] = [
   {
+    version: '1.0.2',
+    date: '2025-08-11',
+    added: [
+      // 无新增内容
+    ],
+    changed: [
+      '版本号比较机制恢复为数字比较，仅当最新版本大于本地版本时才认为有更新',
+      '[运维] 自动替换 version.ts 中的版本号为 VERSION.txt 中的版本号',
+    ],
+    fixed: [
+      // 无修复内容
+    ],
+  },
+  {
+    version: '1.0.1',
+    date: '2025-08-11',
+    added: [
+      // 无新增内容
+    ],
+    changed: [
+      // 无变更内容
+    ],
+    fixed: ['修复版本检查功能，只要与最新版本号不一致即认为有更新'],
+  },
+  {
     version: '1.0.0',
     date: '2025-08-10',
     added: [
